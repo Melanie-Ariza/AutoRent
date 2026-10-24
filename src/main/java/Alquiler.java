@@ -65,10 +65,4 @@ public class Alquiler {
                 ", Cliente: " + cliente +
                 ", Vehiculo: " + vehiculo;
     }
-
-
-
-
-
-
 }

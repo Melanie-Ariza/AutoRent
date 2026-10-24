@@ -17,12 +17,12 @@ public class Motocicleta extends Vehiculo {
     @Override
     public String toString() {
         return "Motocicleta\n" +
-                "Cilindraje:" + cilindraje;
+                "cilindraje: " + cilindraje;
     }
 
     @Override
     public double calcularTarifa(int dias) {
-        double tarifa= TARIFA*dias*0.9;
+        double tarifa= (TARIFA*0.9)*dias;
         return tarifa;
     }
 }

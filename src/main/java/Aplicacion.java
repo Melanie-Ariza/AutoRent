@@ -25,5 +25,8 @@ public class Aplicacion {
 
         Camioneta camioneta1 = new Camioneta("CP34","Isuzi","D-MAX","2023",Estado.BUENO,500);
         Camioneta camioneta2 = new Camioneta("Cityboy64","Toyota","Lite ace","2022",Estado.MALO,700);
+
+        //Alquiler
+
     }
 }
