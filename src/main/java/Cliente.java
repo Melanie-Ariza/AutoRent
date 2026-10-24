@@ -40,4 +40,8 @@ public class Cliente {
                 ", Correo: " + correo +
                 ", Documento: " + documento;
     }
+
+    public void mostrarDatos() {
+        System.out.println("---- Datos ----");
+    }
 }

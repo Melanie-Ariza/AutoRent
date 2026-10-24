@@ -16,9 +16,15 @@ public class Residente extends Cliente{
 
     @Override
     public String toString() {
-        return "Residente\n" +
-                super( )+
-                "direccion:" + direccion + '\'' +
-                '}';
+        return super.toString()+
+                ", Dirección: "+direccion;
+    }
+
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
+        System.out.println("Residente: "+ getNombre()+
+                "Documento: "+getDocumento()+
+                "Dirección: "+ direccion);
     }
 }
