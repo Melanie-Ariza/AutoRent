@@ -66,4 +66,25 @@ public class Empresa {
                 ", listaCliente: " + listaCliente +
                 ", listaVehiculo: " + listaVehiculo;
     }
+
+    public void mostrarDatosEmpresa(){
+        System.out.println("=== AutoRent ===");
+        System.out.println("Código: "+ codigo);
+
+        System.out.println("--- Alquileres ---");
+        for (Alquiler alquiler:listaAlquiler){
+            System.out.println(alquiler);
+        }
+
+        System.out.println("--- Clientes ---");
+        for (Cliente cliente:listaCliente){
+            System.out.println(cliente);
+        }
+
+        System.out.println("--- Vehiculos ---");
+        for (Vehiculo vehiculo:listaVehiculo){
+            System.out.println(vehiculo);
+        }
+
+    }
 }
