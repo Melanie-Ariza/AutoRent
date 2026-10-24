@@ -3,16 +3,17 @@ import java.util.Date;
 public class Alquiler {
     private int codigo;
     private Date fecha;
-    private String cliente;
-    private String vehiculo;
     private int dias;
 
-    public Alquiler(int codigo, Date fecha, String cliente, String vehiculo, int dias) {
+    private Vehiculo vehiculo;
+    private Cliente cliente;
+
+    public Alquiler(int codigo, Date fecha, int dias, Vehiculo vehiculo, Cliente cliente) {
         this.codigo = codigo;
         this.fecha = fecha;
-        this.cliente = cliente;
-        this.vehiculo = vehiculo;
         this.dias = dias;
+        this.vehiculo= vehiculo;
+        this.cliente= cliente;
     }
 
     public int getCodigo() {
@@ -31,22 +32,6 @@ public class Alquiler {
         this.fecha = fecha;
     }
 
-    public String getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
-    }
-
-    public String getVehiculo() {
-        return vehiculo;
-    }
-
-    public void setVehiculo(String vehiculo) {
-        this.vehiculo = vehiculo;
-    }
-
     public int getDias() {
         return dias;
     }
@@ -55,19 +40,29 @@ public class Alquiler {
         this.dias = dias;
     }
 
-    @Override
-    public String toString() {
-        return "Alquiler: " +
-                ", codigo: " + codigo +
-                ", fecha: " + fecha +
-                ", cliente: " + cliente +
-                ", vehiculo: " + vehiculo +
-                ", dias: " + dias;
+    public Vehiculo getVehiculo() {
+        return vehiculo;
     }
 
+    public void setVehiculo(Vehiculo vehiculo) {
+        this.vehiculo = vehiculo;
+    }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
 
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
-
-
+    @Override
+    public String toString() {
+        return "Alquiler\n " +
+                ", Codigo: " + codigo +
+                ", Fecha: " + fecha +
+                ", Dias: " + dias+
+                ", Cliente: " + cliente +
+                ", Vehiculo: " + vehiculo;
+    }
 }
