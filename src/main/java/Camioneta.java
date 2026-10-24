@@ -18,7 +18,7 @@ public class Camioneta extends Vehiculo {
     @Override
     public String toString() {
         return "Camioneta\n" +
-                "capacidadCarga=" + capacidadCarga;
+                "Capacidad carga: " + capacidadCarga;
     }
 
     @Override

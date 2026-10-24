@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class Vehiculo {
     private String placa;
     private String marca;
@@ -8,41 +5,13 @@ public abstract class Vehiculo {
     private String fechaFabricacion;
     public final static double TARIFA=10000;
     private Estado estado;
-    private Alquiler alquiler;
-    private List<Alquiler> listaAlquiler;
 
-    public Vehiculo(String placa, String marca, String modelo, String fechaFabricacion, Estado estadoVehiculo,Alquiler alquiler) {
+    public Vehiculo(String placa, String marca, String modelo, String fechaFabricacion, Estado estado) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
         this.fechaFabricacion = fechaFabricacion;
-        this.estado = estadoVehiculo;
-        listaAlquiler = new ArrayList<Alquiler>();
-
-    }
-
-    public List<Alquiler> getListaAlquiler() {
-        return listaAlquiler;
-    }
-
-    public void setListaAlquiler(List<Alquiler> listaAlquiler) {
-        this.listaAlquiler = listaAlquiler;
-    }
-
-    public Estado getEstado() {
-        return estado;
-    }
-
-    public void setEstado(Estado estado) {
         this.estado = estado;
-    }
-
-    public Alquiler getAlquiler() {
-        return alquiler;
-    }
-
-    public void setAlquiler(Alquiler alquiler) {
-        this.alquiler = alquiler;
     }
 
     public String getPlaca() {
@@ -89,15 +58,12 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo{" +
-                "placa='" + placa + '\'' +
-                ", marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", fechaFabricacion='" + fechaFabricacion + '\'' +
-                ", estado=" + estado +
-                ", alquiler=" + alquiler +
-                ", listaAlquiler=" + listaAlquiler +
-                '}';
+        return "Vehiculo\n" +
+                "Placa: " + placa+
+                ", Marca: " + marca +
+                ", Modelo: " + modelo +
+                ", Fecha fabricación: " + fechaFabricacion +
+                ", Estado:" + estado;
+        }
     }
-}
 
