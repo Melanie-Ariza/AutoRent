@@ -35,5 +35,9 @@ public class Aplicacion {
         Alquiler alquiler3 = new Alquiler(333, Date.valueOf("2026-9-17"), 40, motocicleta1, residente1);
         Alquiler alquiler4 = new Alquiler(444, Date.valueOf("2026-10-12"), 37, motocicleta2, residente2);
 
+        alquiler1.mostrarFactura();
+        alquiler2.mostrarFactura();
+        alquiler3.mostrarFactura();
+        alquiler4.mostrarFactura();
     }
 }
