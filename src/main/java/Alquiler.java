@@ -70,7 +70,7 @@ public class Alquiler {
         double costoDiario = costoTotal / dias;
 
         System.out.println("==================================================");
-        System.out.println("               AUTORENT - FACTURA                 ");
+        System.out.println("                    FACTURA                       ");
         System.out.println("==================================================");
         System.out.println("Código Alquiler : " + codigo);
         System.out.println("Fecha           : " + fecha);
