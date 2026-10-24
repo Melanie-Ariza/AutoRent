@@ -2,8 +2,8 @@ public class Camioneta extends Vehiculo {
 
     private int capacidadCarga;
 
-    public Camioneta(String placa, String marca, String modelo, String fechaFabricacion, Estado estadoVehiculo, int capacidadCarga) {
-        super(placa, marca, modelo, fechaFabricacion, estadoVehiculo);
+    public Camioneta(String placa, String marca, String modelo, String fechaFabricacion, Estado estado, int capacidadCarga) {
+        super(placa, marca, modelo, fechaFabricacion, estado);
         this.capacidadCarga = capacidadCarga;
     }
 
@@ -17,8 +17,13 @@ public class Camioneta extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Camioneta{" +
-                "capacidadCarga=" + capacidadCarga +
-                '}';
+        return "Camioneta\n" +
+                "capacidadCarga=" + capacidadCarga;
+    }
+
+    @Override
+    public double calcularTarifa(int dias) {
+        double tarifa= (TARIFA+50000)*dias;
+        return tarifa;
     }
 }
