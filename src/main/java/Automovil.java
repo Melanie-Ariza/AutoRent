@@ -1,8 +1,8 @@
 public class Automovil extends Vehiculo{
     private int numeroPuertas;
 
-    public Automovil(String placa, String marca, String modelo, String anio, EstadoVehiculo estadoVehiculo, int numeroPuertas) {
-        super(placa, marca, modelo, anio, estadoVehiculo);
+    public Automovil(String placa, String marca, String modelo, String anio, Estado estado, int numeroPuertas) {
+        super(placa, marca, modelo, anio, estado);
         this.numeroPuertas = numeroPuertas;
     }
 

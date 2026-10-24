@@ -54,7 +54,7 @@ public abstract class Vehiculo {
         this.estado = estadoVehiculo;
     }
 
-    public abstract double calcularTarida(int dias);
+    public abstract double calcularTarifa(int dias);
 
     @Override
     public String toString() {
