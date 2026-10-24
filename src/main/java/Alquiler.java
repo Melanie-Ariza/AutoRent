@@ -70,35 +70,22 @@ public class Alquiler {
         double costoDiario = costoTotal / dias;
 
         System.out.println("==================================================");
-        System.out.println("                    FACTURA                       ");
+        System.out.println("               AUTORENT - FACTURA                 ");
         System.out.println("==================================================");
         System.out.println("Código Alquiler : " + codigo);
         System.out.println("Fecha           : " + fecha);
         System.out.println("--------------------------------------------------");
         System.out.println("DATOS DEL CLIENTE:");
-        System.out.println(" Nombre        : " + cliente.getNombre());
-        System.out.println(" Documento     : " + cliente.getDocumento());
-        System.out.println(" Correo        : " + cliente.getCorreo());
-
-        if (cliente instanceof Turista) {
-            Turista t = (Turista) cliente;
-            System.out.println(" Tipo          : Turista (Visa: " + t.getVisa() + ")");
-        } else if (cliente instanceof Residente) {
-            Residente r = (Residente) cliente;
-            System.out.println(" Tipo          : Residente (Dirección: " + r.getDireccion() + ")");
-        }
-
+        System.out.println(cliente.toString());
         System.out.println("--------------------------------------------------");
         System.out.println("DATOS DEL VEHÍCULO:");
-        System.out.println(" Tipo          : " + vehiculo.getClass().getSimpleName());
-        System.out.println(" Placa         : " + vehiculo.getPlaca());
-        System.out.println(" Marca/Modelo  : " + vehiculo.getMarca() + " " + vehiculo.getModelo());
-        System.out.println(" Estado        : " + vehiculo.getEstadoVehiculo());
+        System.out.println("Placa: " + vehiculo.getPlaca() + " | Marca: " + vehiculo.getMarca() + " | Modelo: " + vehiculo.getModelo());
+        System.out.println("Estado: " + vehiculo.getEstadoVehiculo());
         System.out.println("--------------------------------------------------");
         System.out.println("DETALLE DEL COBRO:");
-        System.out.println(" Días de renta : " + dias);
-        System.out.println(" Tarifa / Día  : $" + costoDiario);
-        System.out.println(" TOTAL A PAGAR : $" + costoTotal);
+        System.out.println("Días de renta : " + dias);
+        System.out.println("Tarifa / Día  : $" + costoDiario);
+        System.out.println("TOTAL A PAGAR : $" + costoTotal);
         System.out.println("==================================================\n");
     }
 }
