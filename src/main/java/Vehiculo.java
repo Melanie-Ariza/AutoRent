@@ -9,24 +9,15 @@ public abstract class Vehiculo {
     public final static double TARIFA=10000;
     private Estado estado;
     private Alquiler alquiler;
-    private List<Alquiler> listaAlquiler;
 
-    public Vehiculo(String placa, String marca, String modelo, String fechaFabricacion, Estado estadoVehiculo,Alquiler alquiler) {
+    public Vehiculo(String placa, String marca, String modelo, String fechaFabricacion, Estado estado,Alquiler alquiler) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
         this.fechaFabricacion = fechaFabricacion;
-        this.estado = estadoVehiculo;
-        listaAlquiler = new ArrayList<Alquiler>();
+        this.estado = estado;
+        this.alquiler = alquiler;
 
-    }
-
-    public List<Alquiler> getListaAlquiler() {
-        return listaAlquiler;
-    }
-
-    public void setListaAlquiler(List<Alquiler> listaAlquiler) {
-        this.listaAlquiler = listaAlquiler;
     }
 
     public Estado getEstado() {
@@ -85,7 +76,7 @@ public abstract class Vehiculo {
         this.estado = estadoVehiculo;
     }
 
-    public abstract double calcularTarida(int dias);
+    public abstract double calcularTarifa(int dias);
 
     @Override
     public String toString() {
@@ -96,8 +87,7 @@ public abstract class Vehiculo {
                 ", fechaFabricacion='" + fechaFabricacion + '\'' +
                 ", estado=" + estado +
                 ", alquiler=" + alquiler +
-                ", listaAlquiler=" + listaAlquiler +
-                '}';
+                ", listaAlquiler";
     }
 }
 
