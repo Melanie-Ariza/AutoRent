@@ -1,3 +1,5 @@
+import java.sql.Date;
+
 public class Aplicacion {
     static void main() {
 
@@ -27,6 +29,11 @@ public class Aplicacion {
         Camioneta camioneta2 = new Camioneta("Cityboy64","Toyota","Lite ace","2022",Estado.MALO,700);
 
         //Alquiler
+
+        Alquiler alquiler1 = new Alquiler(111, Date.valueOf("2026-10-25"), 30, automovil1, turista1);
+        Alquiler alquiler2 = new Alquiler(222, Date.valueOf("2026-8-12"), 50, automovil2, turista2);
+        Alquiler alquiler3 = new Alquiler(333, Date.valueOf("2026-9-17"), 40, motocicleta1, residente1);
+        Alquiler alquiler4 = new Alquiler(444, Date.valueOf("2026-10-12"), 37, motocicleta2, residente2);
 
     }
 }
