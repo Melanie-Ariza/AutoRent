@@ -7,7 +7,6 @@ public class Alquiler {
     private String vehiculo;
     private int dias;
 
-
     public Alquiler(int codigo, Date fecha, String cliente, String vehiculo, int dias) {
         this.codigo = codigo;
         this.fecha = fecha;
