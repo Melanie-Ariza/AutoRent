@@ -1,7 +1,10 @@
 public class Aplicacion {
     static void main() {
+
+        //Empresa
         Empresa empresa= new Empresa(123, "AutoRent");
 
+        //Clientes
         Cliente turista1= new Turista("Ana", "ana@gmail.com", "456", "789");
         Cliente turista2= new Turista("Hernesto", "hernesto@gmail.com", "363", "8736");
 
@@ -22,8 +25,5 @@ public class Aplicacion {
 
         Camioneta camioneta1 = new Camioneta("CP34","Isuzi","D-MAX","2023",Estado.BUENO,500);
         Camioneta camioneta2 = new Camioneta("Cityboy64","Toyota","Lite ace","2022",Estado.MALO,700);
-
-
-
     }
 }

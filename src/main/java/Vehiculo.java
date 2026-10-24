@@ -6,12 +6,12 @@ public abstract class Vehiculo {
     public final static double TARIFA=10000;
     private Estado estado;
 
-    public Vehiculo(String placa, String marca, String modelo, String fechaFabricacion, Estado estadoVehiculo) {
+    public Vehiculo(String placa, String marca, String modelo, String fechaFabricacion, Estado estado) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
         this.fechaFabricacion = fechaFabricacion;
-        this.estado = estadoVehiculo;
+        this.estado = estado;
     }
 
     public String getPlaca() {
